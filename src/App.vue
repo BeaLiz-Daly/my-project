@@ -13,15 +13,26 @@ let nextID = articles.value.length+1;  //variable initialised to 4 for function 
 </script>
 
 <template>
-  <body>
-  <div id="app">
-    <header><h1>New Articles</h1></header>
-      <div class ="articleItem" v-for="item in articles" :key="item.articleID">  <!--v-for to display objects in array 'articles' -->
-        <h2> Article {{item.articleID}} : {{item.articleTitle}}</h2>
-        <img :src="item.image" :alt="item.articleTitle" width="200" height="220">
-      </div> <!--need to add category p and place eahc article object inside a card with css-->
+    <div id="app">
+
+      <div class="sideBar">
+        <ul>
+          <li class = "listItem"><a>Home</a></li>
+          <li class = "listItem"><a>Activities</a></li>
+          <li class = "listItem"><a>Clubs</a></li>
+          <li class = "listItem"><a>Societies</a></li>
+          <li class = "listItem"><a>Calendar</a></li>
+        </ul>
+      </div>
+
+      <!--   <header><h1>New Articles</h1></header> -->
+<!-- <div class ="articleItem" v-for="item in articles" :key="item.articleID">  v-for to display objects in array 'articles' -->
+<!--  <h2> Article {{item.articleID}} : {{item.articleTitle}}</h2>  -->
+<!-- <img :src="item.image" :alt="item.articleTitle" width="200" height="220"> -->
+<!-- </div> -->
   </div>
-  </body>
+
+
 </template>
 
 <style>
