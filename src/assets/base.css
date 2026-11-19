@@ -1,19 +1,22 @@
-
-body {
-  color: #340d1f;
-  background-color: #f7efdb;
-  min-height: 40vh;
-  line-height: 1.6;
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
+.app{
 }
-
+.sidebar{
+  list-style-type:none;
+  background-color: #FF626C;
+}
 .articleItem {
-  background-color: #fad77a;
-  border-radius: 13px;
+ width:300px;
+margin:40px;
 }
 .articleItem img{
-  padding:3rem;
-
+  border-radius: 18px 18px 0px 0px;
+}
+header{
+  color:#FFBC56;
+}
+.strokeText {
+  color: white;
+  background-color: white;
+  text-shadow: -1px -1px 0 #e8d722, 1px -1px 0 #e8d722, -1px 1px 0 #e8d722, 1px 1px 0 #e8d722;
 }
 
