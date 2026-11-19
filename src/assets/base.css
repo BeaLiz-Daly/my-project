@@ -1,12 +1,12 @@
-.app{
+/*FILE FPR GLOBAL STYLES, BODY BACKGROUND, DEFAULT FONTS, LAYOUT..*/
+
+#app{
 }
-.sidebar{
+.sideBar{
   list-style-type:none;
   background-color: #FF626C;
-}
-.articleItem {
- width:300px;
-margin:40px;
+  margin-top: -16px;
+  display:flex;
 }
 .articleItem img{
   border-radius: 18px 18px 0px 0px;
@@ -15,8 +15,17 @@ header{
   color:#FFBC56;
 }
 .strokeText {
+  list-style-type:none;
   color: white;
-  background-color: white;
+  background-color: #ff626c;
   text-shadow: -1px -1px 0 #e8d722, 1px -1px 0 #e8d722, -1px 1px 0 #e8d722, 1px 1px 0 #e8d722;
+}
+.topBar{
+  width:100%;
+  height:117px;
+  background-color: #d8f696;
+  box-sizing: border-box;
+  display:flex;
+  align-items: center;
 }
 
