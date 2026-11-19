@@ -25,16 +25,37 @@ let nextID = articles.value.length+1;  //variable initialised to 4 for function 
         </ul>
       </div>
 
-      <!--   <header><h1>New Articles</h1></header> -->
-<!-- <div class ="articleItem" v-for="item in articles" :key="item.articleID">  v-for to display objects in array 'articles' -->
-<!--  <h2> Article {{item.articleID}} : {{item.articleTitle}}</h2>  -->
-<!-- <img :src="item.image" :alt="item.articleTitle" width="200" height="220"> -->
-<!-- </div> -->
+       <header><h1>New Articles</h1></header>
+<div class ="articleItem" v-for="item in articles" :key="item.articleID">
+ <h2> Article {{item.articleID}} : {{item.articleTitle}}</h2>
+ <img :src="item.image" :alt="item.articleTitle" width="200" height="220">
+ </div> -->
   </div>
 
 
 </template>
 
 <style>
+
+body {
+  color: #ffffff;
+  background-color: #f7efdb;
+  min-height: 40vh;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
+
+.articleItem {
+  background-color: #fdda7b;
+  border-radius: 18px;
+}
+.articleItem img{
+  padding:3rem;
+
+}
+.articleItem h2{
+  color: #FF626C;
+}
 
 </style>

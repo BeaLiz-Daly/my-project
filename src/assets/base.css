@@ -1,15 +1,19 @@
 
 body {
   color: #340d1f;
-  background-color: #f1836f;
+  background-color: #f7efdb;
   min-height: 40vh;
   line-height: 1.6;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
 }
 
-.articleItem {background-color: #fde7b9;}
-.articleItem img{
-  padding:3rem;
+.articleItem {
+  background-color: #fad77a;
   border-radius: 13px;
 }
+.articleItem img{
+  padding:3rem;
+
+}
+
