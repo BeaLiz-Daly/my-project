@@ -1,11 +1,17 @@
 /*FILE FPR GLOBAL STYLES, BODY BACKGROUND, DEFAULT FONTS, LAYOUT..*/
-
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
 #app{
 }
 .sideBar{
   list-style-type:none;
   background-color: #FF626C;
-  margin-top: -16px;
   display:flex;
 }
 .articleItem img{
@@ -15,10 +21,11 @@ header{
   color:#FFBC56;
 }
 .strokeText {
+  font-size:4rem;
   list-style-type:none;
   color: white;
   background-color: #ff626c;
-  text-shadow: -1px -1px 0 #e8d722, 1px -1px 0 #e8d722, -1px 1px 0 #e8d722, 1px 1px 0 #e8d722;
+  text-shadow: -3px -3px 0 #e8d722, 3px -3px 0 #e8d722, -3px 3px 0 #e8d722, 3px 3px 0 #e8d722;
 }
 .topBar{
   width:100%;
@@ -27,5 +34,16 @@ header{
   box-sizing: border-box;
   display:flex;
   align-items: center;
+  grid-area: top;
+}
+body h2 b {
+  font-size:3rem;
+  color:white;
+  text-shadow: /*im going to replace the text here with images so the outline will be consistent*/
+          -3px -2.3px 0 #E9B934,
+          3.9px -2.1px 0 #E9B934,
+          -3px 4px 0 #E9B934,
+          5px 4px 0 #E9B934;
+
 }
 

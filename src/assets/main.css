@@ -1,6 +1,7 @@
 @import './base.css';
 #app {
   max-width: 100%;
+  min-height: 100vh; /* fill the screen */
   margin: 0 auto;
   padding: 0;
   font-weight: normal;
@@ -15,14 +16,8 @@ a,
 .green li {
   color: white;
 }
-@media (hover: hover) {
-  a:hover {
-    background-color: hsl(201 100% 54%);
-  }
-}
 @media (min-width: 1024px) {
   body {
-    display: flex;
     place-items: center;
   }
   #app {
