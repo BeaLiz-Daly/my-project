@@ -1,59 +1,70 @@
-<script setup>
-import { nextTick, watch } from 'vue'
-import { RouterView, useRoute } from 'vue-router'
-import SiteNav from './components/siteNav.vue'
-const route = useRoute()
-//watch(() => route.fullPath, async () => { //
-  //await nextTick()//
-  // document.querySelector('#main-content h1')?.focus()//
-// }) acsessability feature add later//
+<script setup lang="ts">
+import { ref, computed } from 'vue'
+const articleContent = ref([{para1: "some info about frozen yoghurt"}])
 
 </script>
 
 <template>
-  <!--<a class="skip-link" href="#main-content">Skip to main content</a>
-  <div class="mainPageBody">  This is a skip link from Shape Up, may not be needed-->
+  <div class="mainPageBody">
 
-  <!-- Top Bar -->
+    <header class="topBar">
+      <h2><b>Fruit Lovers!</b> </h2>
+    </header>
 
-     <!--Main Content-->
-      <main class="articleContent">
-        <div id="newArticles">
-          <h1>New Articles</h1>
-          <div
-              class="articleItem"
-              v-for="item in articles"
-              :key="item.articleID">
-            <img
-                :src="item.image"
-                :alt="item.articleTitle"
-                width="300" height="190">
-            <h2> {{item.articleTitle}}</h2>
-          </div>
-        </div>
-        <div id="savedArticles">
-          <h1>Saved</h1>
-          <div
-              class="articleItem"
-              v-for="item in articles"
-              :key="item.articleID">
-          </div>
-        </div>
+    <nav class="sideBar">
+      <ul>
+        <li class = "listItem strokeText" ><a>Home</a></li>
+        <li class = "listItem strokeText"><a>Saved</a></li>
+        <li class = "listItem strokeText"><a>About</a></li>
+        <li class = "listItem strokeText"><a>Profile</a></li>
+      </ul>
+    </nav>
 
+    <RouterView />
+    <footer class="footer"></footer>
+  </div>
 
-      </main>
-      <footer class="footer"></footer>
+</template>
 
+<style>
+.topBar {
+  grid-area: top;
+}
+.sideBar {
+  grid-area: side;
+}
+.articleContent {
+  grid-area: main;
+}
+body h2 b {
+  font-size:3rem;
+  color:white;
+  text-shadow:
+      -4px -4px 0 #E9B934,
+      4px -4px 0 #E9B934,
+      -4px 4px 0 #E9B934,
+      4px 4px 0 #E9B934;
+}
+body {
+  color: #ffffff;
+  background-color: #f7efdb;
+  min-height: 40vh;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
+.articleItem {
+  width:300px;
+  margin:40px;
+  background-color: #fdda7b;
+  border-radius: 18px;
+}
+.articleItem h2{
+  color: #FF626C;
+}
+.footer {
+  grid-area: footer;
+  color:#72BDDD;
+}
 
-      <SiteNav/>
-
-      <main id="main-content" tabindex="-1">
-
-        <RouterView/>
-
-      </main>
-  </template>
-
-  <style scoped>
-
-  </style>
+</style>

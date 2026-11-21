@@ -20,7 +20,7 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 117px 1fr 160px;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
         "top top top top top top"
         "side main main main main main"
