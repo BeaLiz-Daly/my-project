@@ -1,12 +1,20 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import ExerciseDetailView from '../views/Profile.vue'
+import Home from "@/Views/Home.vue";
+import Saved from "@/Views/Saved.vue";
+import About from "@/Views/About.vue";
 const router = createRouter({
+
 
     history: createWebHashHistory(),
     routes: [
-        { path: '/', name: 'workout', component: WorkoutView },
-        { path: '/article/:id', name: 'article-detail', component: ExerciseDetailView },
-        { path: '/manage', name: 'manage', component: ManageWorkoutView },
+        { path: '/',
+          name: 'Home',
+          component: Home
+        },
+        { path: '/saved',
+          name: 'Saved',
+          component: Saved
+        },
     ],
     scrollBehavior() {return { top: 0 }}
 })

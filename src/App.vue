@@ -13,17 +13,19 @@ const articleContent = ref([{para1: "some info about frozen yoghurt"}])
 
     <nav class="sideBar">
       <ul>
-        <li class = "listItem strokeText" ><a>Home</a></li>
-        <li class = "listItem strokeText"><a>Saved</a></li>
-        <li class = "listItem strokeText"><a>About</a></li>
-        <li class = "listItem strokeText"><a>Profile</a></li>
+        <li class = "listItem strokeText" ><RouterLink to="/">Home</RouterLink></li>
+        <li class = "listItem strokeText"><RouterLink to="/saved">Saved</RouterLink></li>
+        <li class = "listItem strokeText"><RouterLink to="/about">About</RouterLink></li>
+        <li class = "listItem strokeText"><RouterLink to="/profile">Profile</RouterLink></li>
       </ul>
     </nav>
 
-    <RouterView />
+    <div id="ArticleBox">
+      <RouterView />
+    </div>
+
     <footer class="footer"></footer>
   </div>
-
 </template>
 
 <style>
@@ -33,7 +35,7 @@ const articleContent = ref([{para1: "some info about frozen yoghurt"}])
 .sideBar {
   grid-area: side;
 }
-.articleContent {
+#ArticleBox {
   grid-area: main;
 }
 body h2 b {
@@ -66,5 +68,8 @@ body {
   grid-area: footer;
   color:#72BDDD;
 }
-
+.sideBar a {
+  color: white;
+  text-decoration: none;
+}
 </style>
