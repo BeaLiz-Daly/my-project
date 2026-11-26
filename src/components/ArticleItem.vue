@@ -1,16 +1,17 @@
-<script setup lang="js">
-import articles from 'src/data/articles.js';
+<script setup>
+defineProps({
+  article: Object
+})
 </script>
 
 <template>
-  <div
-      class="articleItem"
-      v-for="item in articles"
-      :key="item.articleID">
+  <div class="articleItem">
     <img
-        :src="item.image"
-        :alt="item.articleTitle"
-        width="300" height="190">
-    <h2> {{item.articleTitle}}</h2>
+        :src="article.image"
+        :alt="article.articleTitle"
+        width="300"
+        height="180"
+    >
+    <h2>{{ article.articleTitle }}</h2>
   </div>
 </template>

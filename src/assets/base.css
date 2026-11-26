@@ -11,7 +11,7 @@ html, body {
 }
 .sideBar{
   list-style-type:none;
-  background-color: #FF626C;
+  background-color: #fb7a89;
   display:flex;
 }
 .articleItem img{
@@ -24,11 +24,11 @@ header{
   font-size:4rem;
   list-style-type:none;
   color: white;
-  background-color: #ff626c;
+  background-color: #fd7b8a;
   text-shadow: -3px -3px 0 #e8d722, 3px -3px 0 #e8d722, -3px 3px 0 #e8d722, 3px 3px 0 #e8d722;
 }
 .strokeText:hover{
-  text-shadow: -3px -3px 0 #a2c849, 3px -3px 0 #a2c849, -3px 3px 0 #a7c24b, 3px 3px 0 #a2c849;
+  text-shadow: -3px -3px 0 #7abd29, 3px -3px 0 #7abd29, -3px 3px 0 #7abd29, 3px 3px 0 #7abd29;
 }
 .topBar{
   width:100%;

@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from "@/Views/Home.vue";
-import Saved from "@/Views/Saved.vue";
+import Create from "@/Views/Create.vue";
 import About from "@/Views/About.vue";
 const router = createRouter({
 
@@ -11,9 +11,9 @@ const router = createRouter({
           name: 'Home',
           component: Home
         },
-        { path: '/saved',
-          name: 'Saved',
-          component: Saved
+        { path: '/create',
+          name: 'Create',
+          component: Create
         },
     ],
     scrollBehavior() {return { top: 0 }}
